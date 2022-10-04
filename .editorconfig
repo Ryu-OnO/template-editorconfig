@@ -1,0 +1,20 @@
+# rootをtrueにすることでこのeditorconfigより上位階層のconfigを検索しなくなります。基本trueで良い
+root = true
+
+# ワイルドカードを利用してコーディングスタイルを指定するファイル名の指定できます。
+[*]
+indent_style = space                # インデントの種類をtabかspaceか指定
+indent_size = 4                     # インデントのサイズ
+end_of_line = lf                    # 改行コードの指定(lf, cr, crlf)
+charset = utf-8                     # 文字コードの指定(utf-8、utf-16be、utf-16leあたり推奨)
+trim_trailing_whitespace = true     # trueで行末（改行コードの前）にある空白文字（スペースやタブ）を削除
+insert_final_newline = true         # 最後の行に空行を入れる(true推奨)
+
+[*.md]
+trim_trailing_whitespace = false    # 空白に改行の意味を持つのでfalseにする
+
+[**.std]
+insert_final_newline = false
+
+[package.json,*.less,*.coffee]
+indent_size = 2
