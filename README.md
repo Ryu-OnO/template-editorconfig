@@ -1,5 +1,5 @@
 # template-editorconfig
-.editorconfigのテンプレ
+editorconfigのテンプレ
 
 ## エディターコンフィグとは
 .editorconfigはコーディングスタイルを異なるエディタ間で共有する規格  
